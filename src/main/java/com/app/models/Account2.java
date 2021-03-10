@@ -1,5 +1,9 @@
-package com.app.example.jdbc;
+package com.app.models;
 
+/**
+ * Model with different field names that the DB
+ * @author Jalal Kiswani
+ */
 public class Account2 {
 	int accountId;
 	String accountName;

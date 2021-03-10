@@ -1,5 +1,10 @@
-package com.app.example.jdbc;
+package com.app.models;
 
+/**
+ * Model with same field names as DB
+ * @author Jalal Kiswani
+ *
+ */
 public class Account {
 	int id;
 	String name;

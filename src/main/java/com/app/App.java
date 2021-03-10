@@ -1,20 +1,20 @@
-package com.app.example.jdbc;
+package com.app;
 
 import java.util.List;
 import java.util.Map;
 
+import com.app.models.Account;
+import com.app.models.Account2;
 import com.jk.db.dataaccess.core.JKDataAccessService;
 import com.jk.db.dataaccess.core.JKPopulator;
 import com.jk.db.datasource.JKDataAccessFactory;
 import com.jk.util.JK;
 
-public class JdbcBasicExample {
+public class App {
 	public static void main(String[] args) {
-		// Create Dao Instance
+		// Create Instance
 		JKDataAccessService dao = JKDataAccessFactory.getDataAccessService();
-
-		System.out.println(System.getProperty("test-value", "N/A"));
-
+		
 		if (!dao.isTableExists("ACCOUNTS")) {
 			dao.runScript("/script.sql");
 			dao.execute("INSERT INTO ACCOUNTS VALUES(?,?,?)", 5, "Jalal", 100);
