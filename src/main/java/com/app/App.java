@@ -11,16 +11,18 @@ import com.jk.db.datasource.JKDataAccessFactory;
 import com.jk.util.JK;
 
 public class App {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		// Create Instance
 		JKDataAccessService dao = JKDataAccessFactory.getDataAccessService();
-		
+		JK.line();
 		if (!dao.isTableExists("ACCOUNTS")) {
-			dao.runScript("/script.sql");
+			dao.beginTransaction();
+			dao.runScript("/h2-script.sql");
 			dao.execute("INSERT INTO ACCOUNTS VALUES(?,?,?)", 5, "Jalal", 100);
 			dao.execute("INSERT INTO ACCOUNTS VALUES(?,?,?)", 6, "Ata", 200);
 			dao.execute("INSERT INTO ACCOUNTS VALUES(?,?,?)", 7, "Essa", 300);
 			dao.execute("INSERT INTO ACCOUNTS VALUES(?,?,?)", 8, "Jamal", 400);
+			dao.closeTransaction(true);
 		}
 		// return single results
 		JK.line();
