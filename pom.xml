@@ -1,15 +1,16 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.jalalkiswani</groupId>
-	<version>4.0.4</version>
-	<artifactId>smart-cloud-data-jdbc-example</artifactId>
+	<version>6.0.0</version>
+	<artifactId>jk-framework-data-jdbc-example</artifactId>
+	<properties>
+		<jk-framework.version>6.0.0</jk-framework.version>
+	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>com.jalalkiswani</groupId>
-			<artifactId>smart-cloud-data</artifactId>
-			<version>4.0.8-1-SNAPSHOT</version>
+			<artifactId>jk-framework-data</artifactId>
+			<version>${jk-framework.version}</version>
 		</dependency>
 	</dependencies>
 	<build>

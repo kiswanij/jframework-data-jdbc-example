@@ -5,10 +5,10 @@ import java.util.Map;
 
 import com.app.models.Account;
 import com.app.models.Account2;
-import com.jk.db.dataaccess.core.JKDataAccessService;
-import com.jk.db.dataaccess.core.JKPopulator;
-import com.jk.db.datasource.JKDataAccessFactory;
-import com.jk.util.JK;
+import com.jk.core.util.JK;
+import com.jk.data.dataaccess.JKDataAccessFactory;
+import com.jk.data.dataaccess.core.JKDataAccessService;
+import com.jk.data.dataaccess.core.JKPopulator;
 
 public class App {
 	public static void main(String[] args) throws InterruptedException {
