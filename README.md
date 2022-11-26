@@ -9,7 +9,8 @@ This repository contains a _JKFramework-Data_ example which execute SQL statemen
 
 ## Usage:
 1. Clone the repository
-2. Import as Java project into your favorite IDE (`We use SpringToolSuite and Eclipse for Java EE developers`)
+2. Import as Java project into your favorite IDE 
+  > We use SpringToolSuite and Eclipse for Java EE developers
 3. Run `App` class.
 
 ## Project Main Contents 
