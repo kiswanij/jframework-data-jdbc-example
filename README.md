@@ -21,5 +21,5 @@ The repository  contains the following main contents:
 3. [Account model](src/main/java/com/app/models/Account.java) which include fields names that are the same names
 of fields in the database
 3. [Account2 model](src/main/java/com/app/models/Account2.java) which contains fields names that are DIFFERENT from database field names.   
-8. [Main java class](src/main/java/com/app/App.java)  
+8. [App class](src/main/java/com/app/App.java)  
 
