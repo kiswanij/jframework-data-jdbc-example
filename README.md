@@ -1,5 +1,6 @@
 # JFramework Data JDBC Example
-_Last updated: 2022-11-26_
+
+_Last updated: Aug 20, 2025_
 
 
 This repository contains a _JFramework-Data_ example which execute SQL statement son locally created H2 database.
