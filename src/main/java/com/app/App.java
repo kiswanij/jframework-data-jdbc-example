@@ -7,13 +7,13 @@ import com.app.models.Account;
 import com.app.models.Account2;
 import com.jk.core.util.JK;
 import com.jk.data.dataaccess.JKDataAccessFactory;
-import com.jk.data.dataaccess.core.JKDataAccessService;
+import com.jk.data.dataaccess.core.JKDataAccess;
 import com.jk.data.dataaccess.core.JKPopulator;
 
 public class App {
 	public static void main(String[] args) throws InterruptedException {
 		// Create Instance
-		JKDataAccessService dao = JKDataAccessFactory.getDataAccessService();
+		JKDataAccess dao = JKDataAccessFactory.getDataAccessService();
 		JK.line();
 		if (!dao.isTableExists("ACCOUNTS")) {
 			dao.beginTransaction();
